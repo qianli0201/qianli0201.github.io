@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Research Accomplishments</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+
+		<style>
+			.iframe-container {
+				width: 100%;
+				overflow: hidden; /* 避免缩放后出现滚动条 */
+			}
+			.iframe-container iframe {
+				zoom: 1.3; /* 放大 x 倍，可以调整数值 */
+				width: 100%;
+				height: 1000px;
+			}
+		</style>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+		<div id="sidebar"></div>
+		<script>
+			fetch('/sidebar.html')
+				.then(response => response.text())
+				.then(html => {
+					document.getElementById('sidebar').innerHTML = html;
+				});
+		</script>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<div id="main">
+
+					<div class="iframe-container">
+						<iframe src="Final_Qian_Li.html" width="100%" height="1000px"></iframe>
+					</div>
+					
+
+			</div>
+
+			<!-- Footer -->
+			<section id="footer">
+				<div class="container">
+					<ul class="copyright">
+						<li>&copy; Qian Li. All rights reserved.</li>
+					</ul>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/jquery.scrollex.min.js"></script>
+		<script src="/assets/js/jquery.scrolly.min.js"></script>
+		<script src="/assets/js/browser.min.js"></script>
+		<script src="/assets/js/breakpoints.min.js"></script>
+		<script src="/assets/js/util.js"></script>
+		<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>
